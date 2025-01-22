@@ -13,15 +13,15 @@ public class Main {
 //        System.out.println(human.getClass());
 //        System.out.println(human.getClass().getName());
 
-//        A random = getRandomClass();
-//        System.out.println(random.getClass().getName());
-//
-//        if (random.getClass().getName().equals("B")) {
-//            System.out.println("Random class is B");
-//        } else {
-//            System.out.println("Random class is C");
-//        }
-//        System.out.println(random.getClass().getSuperclass().getName());
+        A random = getRandomClass();
+        System.out.println(random.getClass().getName());
+
+        if (random.getClass().getName().equals("B")) {
+            System.out.println("Random class is B");
+        } else {
+            System.out.println("Random class is C");
+        }
+        System.out.println(random.getClass().getSuperclass().getName());
 
         // clone()
         // shallow copy
@@ -74,12 +74,12 @@ public class Main {
 
 //        System.out.println(4==4);
 //        System.out.println(true==false);
-        Human human = new Human("Davit", 20);
-        Human human2 = new Human("Davit", 20);
-        System.out.println(human.equals(human2));
-        Human human3 = human;
-        System.out.println(human.equals(human3));
-        System.out.println(human == human3);
+//        Human human = new Human("Davit", 20);
+//        Human human2 = new Human("Davit", 20);
+//        System.out.println(human.equals(human2));
+//        Human human3 = human;
+//        System.out.println(human.equals(human3));
+//        System.out.println(human == human3);
     }
 
     public static A getRandomClass() {
