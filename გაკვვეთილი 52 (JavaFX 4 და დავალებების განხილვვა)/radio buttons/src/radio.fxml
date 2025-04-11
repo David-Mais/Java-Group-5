@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RadioController">
+   <children>
+      <Label layoutX="98.0" layoutY="41.0" text="2 + 2 = ?">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" alignment="CENTER" layoutY="160.0" prefHeight="40.0" prefWidth="379.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="choiceA" layoutX="22.0" layoutY="301.0" mnemonicParsing="false" onAction="#pick" text="3">
+         <toggleGroup>
+            <ToggleGroup fx:id="answer" />
+         </toggleGroup>
+         <font>
+            <Font size="22.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="choiceB" layoutX="134.0" layoutY="301.0" mnemonicParsing="false" onAction="#pick" text="Zugdidi" toggleGroup="$answer">
+         <font>
+            <Font size="22.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="choiceC" layoutX="297.0" layoutY="301.0" mnemonicParsing="false" onAction="#pick" text="4" toggleGroup="$answer">
+         <font>
+            <Font size="22.0" />
+         </font></RadioButton>
+   </children>
+</AnchorPane>
